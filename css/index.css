@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* NavBar */
+.nav-wrapper{
+    padding: 0 9em;
+    background-color: white;
+}
+.nav-wrapper a{
+    color: gray;
+}
+
+
+
+
+
+/* HomeDiv */
+.HomeDiv{
+    height: 85vh;
+    width: 100%;
+    background-image: url('../assets/home2.jpeg');
+    background-size: cover;
+    
+}
+.transparent-box{
+    background: #24234D;
+    opacity: 0.9;
+    position: absolute;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeContent{
+    /* background-color: teal; */
+    width: 60%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1.3fr 0.5fr 1fr 2fr;
+    grid-template-areas:
+    "logo"
+    "INDIA"
+    "Global"
+    "Tickets";
+}
+.homeContent .logo{
+    grid-area: logo;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+.India{
+    grid-area: INDIA;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Global{
+    grid-area: Global;
+    /* background-color: darkgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4em;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.Tickets{
+    grid-area: Tickets;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tickets a{
+    height: 75%;
+    width: 25%;
+    background-color: whitesmoke;
+    opacity: 1;
+    padding: 2em 0;
+    border-radius: 10px;
+    z-index: 0;
+}
+.Tickets i{
+    font-size: 35px;
+    transform: rotate(-30deg);
+    color: orangered;
+}
+.Tickets span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tickets{
+    width: 100%;
+    height: 2em;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 22px;
+    color: orangered;
+}
