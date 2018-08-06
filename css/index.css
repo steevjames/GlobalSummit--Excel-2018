@@ -5,19 +5,79 @@ body{
 
 
 
-/* NavBar */
-nav{
-    position: sticky;
-    top:0;
-    z-index: 10;
+
+
+
+/* NAVBAR */
+.navBar{
+    height: 75px;
+    width: 100%;
+    display: flex;
 }
-.nav-wrapper{
-    padding: 0 9em;
-    background-color: white;
+
+.Logo{
+    background-color: teal;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    color: #888888;
 }
-.nav-wrapper a{
-    color: gray;
+
+.nav-details{
+    background-color: tomato;
+    flex-basis: 50%;
+    overflow: hidden;
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    flex-direction: row-reverse;
 }
+
+.nav-details > a{
+    margin: 1em;
+    font-size: 17px;
+}
+
+.dropdown .dropdown-btn{
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+.dropDown-content{
+    /* display: none; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropDown-content a:hover{
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropDown-content{
+    display: block;
+}
+
+
 
 
 
