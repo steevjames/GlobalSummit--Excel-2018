@@ -87,7 +87,7 @@ body{
 /* BIG DESCRIPTION */
 .aboutTrack{
     position: relative;
-    height: 90vh;
+    height: auto;
     width: 100vw;
     /* background-color: teal; */
     padding: 2em;
