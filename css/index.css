@@ -290,6 +290,7 @@ nav .brand-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 /* COMPANIES */
