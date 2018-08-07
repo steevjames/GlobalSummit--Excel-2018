@@ -348,6 +348,7 @@ nav .brand-logo {
     padding-top: 10px;
     position: adaptive;
     left: 0;
+    overflow: hidden;
     border-radius: 5px;
     background-color: #303030;
     width: 100vw;
@@ -499,6 +500,7 @@ hr {
 }
 
 .Excelbrand {
+    /* margin-top: 4em; */
     grid-area: brand;
     /* background-color: brown; */
     display: grid;
@@ -515,7 +517,7 @@ hr {
 @media(max-width: 768px) {
     /* Footer */
     .footerDiv {
-        height: 30vh;
+        height: 50vh;
     }
     .logo img {
         display: none;
