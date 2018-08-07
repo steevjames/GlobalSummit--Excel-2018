@@ -16,6 +16,30 @@ body{
     display: flex;
 }
 
+nav .nav-wrapper {
+	position: relative;
+	height: 100%;
+	background-color:white;
+}
+
+nav ul a {
+	-webkit-transition: background-color .3s;
+	transition: background-color .3s;
+	font-size: 1rem;
+	color: black;
+	display: block;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+nav .brand-logo {
+	position: absolute;
+	color: black;
+	display: inline-block;
+	font-size: 2.1rem;
+	padding: 5px;
+}
+
 .Logo{
     /* background-color: teal; */
     flex-basis: 50%;
@@ -190,7 +214,7 @@ body{
     flex-basis: 70%;
     /* height: 2em; */
     /* background-color: blueviolet; */
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -233,10 +257,11 @@ body{
     /* background-color: yellow; */
     padding-bottom: 1em;
 }
-.globalDiv button{
-    width: 13em;
-    border-radius: 7px;
-    justify-self: center;
+.globalDiv button {
+	width: 14em;
+	border-radius: 7px;
+	justify-self: center;
+	height: 4em;
 }
 
 
@@ -369,7 +394,8 @@ body{
 
 .attendeeContainer{
     width: 100%;
-    height: 250vh;
+    min-height: 250vh;
+    overflow:hidden;
 }
 .attendeeHead{
     width: 100%;
@@ -385,29 +411,24 @@ body{
 }
 .attendeeDetails{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .attendeeDetailDiv{
     height: auto;
     width: 70%;
-    position: absolute;
+
     left: 0;
     right: 0;
     margin: auto;
     /* background-color: tomato; */
-    display: grid;
-    grid-template-rows: repeat(3,0.7fr);
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 2em;
-    grid-row-gap: 0;
+
 }
 
 .row{
-    display: flex;
-    flex-direction: column;
+    display:flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 hr{
@@ -417,26 +438,8 @@ hr{
 
 /*Contact portraits*/
 .portrait {
-    flex-basis: 33%;
-    font-size: 1.5em;
-    height: 5rem;
-    width: 5rem;
-    -moz-border-radius: 2.5rem;
-    -webkit-border-radius: 2.5rem;
-    border-radius: 2.5rem;
-    display: inline-block;
-    position: relative;
-    margin: 1em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    text-align:center;
+    padding:20px;
   }
   .portrait:hover {
     -webkit-filter: grayscale(0);
@@ -444,9 +447,8 @@ hr{
   }
 
   .portrait > img{
-      height: 15rem;
-      width: 15rem;
-      border-radius: 50%;
+    width:300px;
+    border-radius:300px;
   }
 
 
@@ -587,7 +589,7 @@ hr{
     .footerExcel div{
         font-size: 8px;
     }
-
+}
 
 
 /* Media queries */
@@ -629,41 +631,17 @@ hr{
         font-size: 35px;
         text-align: center;
     }
-
-    .Tickets {
-        grid-area: Tickets;
-        /*background-color: white;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        height: auto;
-    }
-
-    .Tickets i {
-        padding-bottom: 5px;
-        font-size: 30px;
-    }
+    
     #tickets {
-        width: 100%;
-        height: auto; 
-        /* background-color: blueviolet; */
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
         font-size: 15px;
-        color: orangered;
+
+    }
+    .Tickets i {
+        font-size: 25px;
     }
     .Tickets a {
-        height: auto;
-        width: 40vw;
-        background-color: rgba(245, 245, 245,0.95);
-        opacity: 1;
-        padding: 1em 0;
-        border-radius: 5px;
-        z-index: 0;
+        padding: 10px 20px;
     }
-    
     
     
     .globalDiv {
@@ -676,37 +654,7 @@ hr{
     }
     .globalContent{
         font-size: 15px;
-    }.imagesDiv{
-        height: 100vh;
-        background-color: #EFEFEF;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
-    .top-left{
-        background-image: url('../assets/left_image.jpg');
-        background-size: cover;
-        grid-column: 1/3;
-    }
-    .top-right{
-        background-image: url('../assets/right_image.jpg');
-        background-size: cover;
-        grid-column: 4/5;
-    }
-    .bottom-mid{
-        background-image: url('../assets/middle_image.jpg');
-        background-size: cover;
-        grid-column: 2/4;
-    }
-    .quote-section{
-        font-size: 30px;
-    }
-    
-    .globalDiv button {
-        width: auto;
-    }
-    
-    
     
     .imagesDiv{
         height: auto;
@@ -740,4 +688,40 @@ hr{
         color: white;
     }
     
-}}
+}
+
+/*ipad potrait grids*/
+@media only screen and (max-width: 805px) {
+    .imagesDiv{
+        height: auto;
+        background-color: #EFEFEF;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .top-left{
+        background-image: url('../assets/left_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 35vh;
+    }
+    .top-right{
+        background-image: url('../assets/right_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
+
+    }
+    .bottom-mid{
+        background-image: url('../assets/middle_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
+        
+    }
+    .quote-section{
+        height: 35vh;
+        grid-column: auto;
+        color: white;
+    }
+    
+}
