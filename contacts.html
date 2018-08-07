@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <title>Global Summit | Team</title>
+    <link href="assets/icon.png" rel="icon" type="image/gif">
+</head>
+
+<body>
+
+
+
+
+
+
+    <!-- NAVBAR -->
+    <div class="navBar z-depth-3">
+        <div class="Logo">LOGO</div>
+
+        <div class="nav-details">
+            <a href="#">Contacts</a>
+            <a href="#">Exhibition</a>
+            <a href="#">Idea Pitching</a>
+            <div class="dropdown" id="dropdown" onclick="dropDown()">
+                <button class="dropdown-btn">Tracks</button>
+                <div class="dropDown-content" id="dropdown-content">
+                    <a href="#">Track1</a>
+                    <a href="#">Track2</a>
+                    <a href="#">Track3</a>
+                    <a href="#">Track4</a>
+                    <a href="#">Track5</a>
+                    <a href="#">Track6</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- ATTENDEES -->
+    <div class="attendeeContainer">
+        <div class="attendeeHead" style="font-size: 3em;">
+            Global Summit - Core Team
+        </div>
+        <div class="attendeeDetails">
+            <div class="attendeeDetailDiv">
+
+
+                <div class="contactpanel">
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="contactpanel">
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='contact'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="map-box">
+        <div style="text-align:center">
+            <h2>Location</h2>
+            <h4>Kochi Marriot Hotel</h4>
+        </div>
+        <div class="map">
+            <div id="map" style="width:100%;height:750px"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Google Maps -->
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(10.0279665, 76.3076201);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key&callback=myMap"></script>
+    <!--
+      To use this code on the website, get a free API key from Google.
+      -->
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footerDiv">
+
+        <div class="logo">
+            <img src="assets/globalsummit.img" />
+            <div>
+                <span>
+                    <a href="./index.html#nav">Home</a>
+                </span>
+                <span>
+                    <a href="./index.html#about">About</a>
+                </span>
+                <span>
+                    <a href="./contacts.html" target="_blank">Contact Us</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerIbeto">
+            <img src="./assets/Copy of mec_logo.png">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">Model Engineering College</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerExcel">
+            <img src="./assets/Copy of logo3x2newest.png">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">excelmec.org</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="Excelbrand">
+            <span>&copy; Excel 2018</span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
