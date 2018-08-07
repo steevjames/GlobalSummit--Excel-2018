@@ -24,7 +24,7 @@ body{
 }
 
 #map{
-    padding-bottom: 10px
+    padding-bottom: 10rem;
 }
 .contactpanel{
     display:flex;
@@ -40,3 +40,4 @@ body{
     width:300px;
     border-radius:300px;
 }
+
