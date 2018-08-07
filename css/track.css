@@ -15,6 +15,10 @@ body{
     background: url('../assets/Judiciary.jpg');
     background-size: cover;
 }
+.track4{
+    background: url('../assets/track4Head.jpg');
+    background-size: cover;
+}
 
 .headingDetails{
     /* background-color: teal; */

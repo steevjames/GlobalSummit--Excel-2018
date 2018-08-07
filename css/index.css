@@ -335,7 +335,6 @@ body{
     background-color: #303030;
 }
 
-<<<<<<< HEAD
 @media(max-width: 768px){
 
 }
@@ -558,7 +557,6 @@ hr{
         font-size: 8px;
     }
 
-=======
 
 
 /* Media queries */
@@ -711,5 +709,4 @@ hr{
         color: white;
     }
     
->>>>>>> ca6f551fb3e51bef05b6df2a3fe5deeb81dc4662
-}
+}}
