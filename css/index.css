@@ -94,8 +94,7 @@ body{
     
 }
 .transparent-box{
-    background: #24234D;
-    opacity: 0.7;
+    background: rgba(36, 35, 77,0.7);
     position: absolute;
     height: 85vh;
     width: 100%;
@@ -147,6 +146,7 @@ body{
     color: white;
     font-size: 4em;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align: center;
 }
 
 
@@ -303,10 +303,12 @@ body{
     font-weight: lighter;
     color: white;
     z-index: 9;
+    text-align: center;
 }
 .kochiDiv button{
     z-index: 9;
     margin-top: 2em;
+    height: 55px;
 }
 .kochiDiv{
     position: absolute;
@@ -328,4 +330,148 @@ body{
 .footer{
     height: 50vh;
     background-color: #303030;
+}
+
+
+
+/* Media queries */
+/* very small phone Iphone SE */
+
+@media only screen and (max-width: 320px) {
+    .HomeDiv {
+        height: 90vh;
+    
+    }
+
+    .transparent-box {
+        height: 90vh;
+    }
+
+    .India{
+        font-size: 15px;
+    }
+
+    .Global {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Tickets {
+        grid-area: Tickets;
+        /*background-color: white;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .Tickets i {
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+    #tickets {
+        width: 100%;
+        height: auto; 
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 15px;
+        color: orangered;
+    }
+    .Tickets a {
+        height: auto;
+        width: 40vw;
+        background-color: rgba(245, 245, 245,0.95);
+        opacity: 1;
+        padding: 1em 0;
+        border-radius: 5px;
+        z-index: 0;
+    }
+    
+    .globalDiv {
+        height: 95vh;
+    }
+    .globalHead {
+        height: auto;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .globalContent{
+        font-size: 15px;
+    }
+    .globalDiv button {
+        width: auto;
+    }
+}
+
+/* iphone 6s and 6s+*/
+@media only screen and (max-width: 420px) {
+    .HomeDiv {
+        height: 90vh;
+    
+    }
+
+    .transparent-box {
+        height: 90vh;
+    }
+
+    .India{
+        font-size: 15px;
+    }
+
+    .Global {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Tickets {
+        grid-area: Tickets;
+        /*background-color: white;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .Tickets i {
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+    #tickets {
+        width: 100%;
+        height: auto; 
+        /* background-color: blueviolet; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 15px;
+        color: orangered;
+    }
+    .Tickets a {
+        height: auto;
+        width: 40vw;
+        background-color: rgba(245, 245, 245,0.95);
+        opacity: 1;
+        padding: 1em 0;
+        border-radius: 5px;
+        z-index: 0;
+    }
+    
+    .globalDiv {
+        height: 95vh;
+    }
+    .globalHead {
+        height: auto;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .globalContent{
+        font-size: 15px;
+    }
+    .globalDiv button {
+        width: auto;
+    }
 }
