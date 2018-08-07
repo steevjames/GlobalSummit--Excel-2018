@@ -394,7 +394,6 @@ nav .brand-logo {
 
 .attendeeContainer{
     width: 100%;
-    min-height: 250vh;
     overflow:hidden;
 }
 .attendeeHead{

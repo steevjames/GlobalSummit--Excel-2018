@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <title>Exhibition | Global Summmit</title>
+    <link href="assets/icon.png" rel="icon" type="image/gif">
+
+</head>
+
+<body>
+
+
+
+
+    <!-- NavBar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <div href="#">TRACKS</div>
+                </li>
+                <li>
+                    <a href="#">STARTUPS</a>
+                </li>
+                <li>
+                    <a href="#">NEWS</a>
+                </li>
+                <li>
+                    <a href="#">INVESTORS</a>
+                </li>
+                <li>
+                    <a href="#">PARTNERS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+    <!-- HomeDisplay -->
+    <div class="HomeDiv">
+        <div class="transparent-box">
+            <div class="homeContent">
+                <div class="logo">LOGO</div>
+                <div class="India">KOCHI,2018</div>
+                <div class="Global">Exhibition</div>
+                <div class="Tickets">
+                    <a href="#">
+                        <div id="tickets">Book Exhibit</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr />
+
+
+
+
+
+
+
+
+
+    <!-- Global Summit Description -->
+    <div class="globalDiv">
+
+        <div class="globalHead">
+            Global Summit 2018
+        </div>
+
+        <div class="globalContent">
+            SURGE is Web Summit’s first conference in India. In 5 years, Web Summit, held annually in Europe, has grown from 400 attendees
+            to over 42,000 from more than 134 countries. It’s been called “the best technology conference on the planet”.
+            Now we’re coming to India...
+        </div>
+
+        <button class="btn deep-orange waves-light waves-effect">Learn More</button>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ImagesDiv -->
+    <div class="imagesDiv">
+        <div class="top-left"></div>
+        <div class="quote-section"> Here is a random Quote. Hello World</div>
+        <div class="top-right"></div>
+
+
+        <div class="quote-section">Here is a random Quote. Hello World</div>
+        <div class="bottom-mid"></div>
+        <div class="quote-section">Here is a random Quote. Hello World</div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Companies Attending event -->
+    <div class="companies">
+        Companies Logo..
+    </div>
+
+
+
+
+
+
+
+
+    <!-- PARALLAX KOCHI -->
+    <div class="parallax-container">
+
+        <div class="parallax">
+            <img src="./assets/cochicity.jpeg" style="background-size: cover">
+        </div>
+
+        <div class="transparent-box kochi"></div>
+
+        <div class="kochiDiv">
+            <div>You'll fall in Love with Kochi</div>
+            <button class="btn">DISCOVER KOCHI</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Google Maps -->
+
+    <div class="map-box">
+        <div style="text-align:center">
+            <h2>Location</h2>
+            <h4>Kochi Marriot Hotel</h4>
+        </div>
+        <div class="map">
+            <div id="map" style="width:100%;height:750px"></div>
+        </div>
+    </div>
+
+
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(10.0279665, 76.3076201);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key&callback=myMap"></script>
+    <!--
+      To use this code on the website, get a free API key from Google.
+      -->
+
+
+    <!-- FOOTER -->
+    <div class="footerDiv">
+
+        <div class="logo">
+            <img src="assets/globalsummit.img" />
+            <div>
+                <span>
+                    <a href="./index.html#nav">Home</a>
+                </span>
+                <span>
+                    <a href="./index.html#about">About</a>
+                </span>
+                <span>
+                    <a href="./contacts.html" target="_blank">Contact Us</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerIbeto">
+            <img src="./assets/img.img">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">Global Summit</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerExcel">
+            <img src="./assets/img.img">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">excelmec.org</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="Excelbrand">
+            <span>&copy; Excel 2018</span>
+        </div>
+
+    </div>
+
+
+
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
