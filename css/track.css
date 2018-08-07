@@ -1,0 +1,89 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.track1{
+    background: url('../assets/track1Head.jpg');
+    background-size: cover;
+}
+
+.headingDetails{
+    /* background-color: teal; */
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 30% 10% 30% 5%;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.trackLogo{
+    font-size: 20px;
+}
+
+.trackKochi{
+    font-size: 18px;
+}
+
+.trackHead{
+    font-size: 4em;
+}
+
+.trackDesc{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* BIG DESCRIPTION */
+.aboutTrack{
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    /* background-color: teal; */
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutTrack > div{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    padding-top: 5em;
+    color: gray;
+    text-align: center;
+}
+
+.aboutTrack > div > h3{
+    margin-bottom: 1em;
+    color: tomato;
+}
+.aboutTrack > div > p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* SPEAKER PANEL */

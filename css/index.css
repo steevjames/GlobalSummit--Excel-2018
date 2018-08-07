@@ -16,7 +16,7 @@ body{
 }
 
 .Logo{
-    background-color: teal;
+    /* background-color: teal; */
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ body{
 }
 
 .nav-details{
-    background-color: tomato;
+    /* background-color: tomato; */
     flex-basis: 50%;
     overflow: hidden;
     float: right;
@@ -38,13 +38,14 @@ body{
 .nav-details > a{
     margin: 1em;
     font-size: 17px;
+    color: gray
 }
 
 .dropdown .dropdown-btn{
     font-size: 17px;    
     border: none;
     outline: none;
-    color: white;
+    color: gray;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -52,9 +53,9 @@ body{
     cursor: pointer;
 }
 .dropDown-content{
-    /* display: none; */
+    display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -89,17 +90,19 @@ body{
     width: 100%;
     background-image: url('../assets/home2.jpeg');
     background-size: cover;
+    position: relative;
     
 }
 .transparent-box{
     background: #24234D;
-    opacity: 0.9;
+    opacity: 0.7;
     position: absolute;
     height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 .homeContent{
     /* background-color: teal; */
@@ -132,9 +135,11 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 20px;
 }
 .Global{
     grid-area: Global;
+    width: 100%;
     /* background-color: darkgreen; */
     display: flex;
     justify-content: center;
