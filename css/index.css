@@ -1,46 +1,42 @@
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-
-
-
-
-
 /* NAVBAR */
-.navBar{
+
+.navBar {
     height: 75px;
     width: 100%;
     display: flex;
 }
 
 nav .nav-wrapper {
-	position: relative;
-	height: 100%;
-	background-color:white;
+    position: relative;
+    height: 100%;
+    background-color: white;
 }
 
 nav ul a {
-	-webkit-transition: background-color .3s;
-	transition: background-color .3s;
-	font-size: 1rem;
-	color: black;
-	display: block;
-	padding: 0 15px;
-	cursor: pointer;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: black;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
 nav .brand-logo {
-	position: absolute;
-	color: black;
-	display: inline-block;
-	font-size: 2.1rem;
-	padding: 5px;
+    position: absolute;
+    color: black;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 5px;
 }
 
-.Logo{
+.Logo {
     /* background-color: teal; */
     flex-basis: 50%;
     display: flex;
@@ -49,7 +45,7 @@ nav .brand-logo {
     color: #888888;
 }
 
-.nav-details{
+.nav-details {
     /* background-color: tomato; */
     flex-basis: 50%;
     overflow: hidden;
@@ -60,14 +56,14 @@ nav .brand-logo {
     flex-direction: row-reverse;
 }
 
-.nav-details > a{
+.nav-details>a {
     margin: 1em;
     font-size: 17px;
     color: gray
 }
 
-.dropdown .dropdown-btn{
-    font-size: 17px;    
+.dropdown .dropdown-btn {
+    font-size: 17px;
     border: none;
     outline: none;
     color: gray;
@@ -77,12 +73,13 @@ nav .brand-logo {
     margin: 0;
     cursor: pointer;
 }
-.dropDown-content{
+
+.dropDown-content {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -95,31 +92,26 @@ nav .brand-logo {
     text-align: left;
 }
 
-.dropDown-content a:hover{
+.dropDown-content a:hover {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropDown-content{
+.dropdown:hover .dropDown-content {
     display: block;
 }
 
-
-
-
-
-
-
 /* HomeDiv */
-.HomeDiv{
+
+.HomeDiv {
     height: 85vh;
     width: 100%;
     background-image: url('../assets/home2.jpeg');
     background-size: cover;
     position: relative;
-    
 }
-.transparent-box{
-    background: rgba(36, 35, 77,0.7);
+
+.transparent-box {
+    background: rgba(36, 35, 77, 0.7);
     position: absolute;
     height: 85vh;
     width: 100%;
@@ -128,22 +120,18 @@ nav .brand-logo {
     align-items: center;
     z-index: 0;
 }
-.homeContent{
+
+.homeContent {
     /* background-color: teal; */
     width: 60%;
     height: 70vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1.2fr 0.5fr 1fr 2fr;
-    grid-template-areas:
-    "logo"
-    "INDIA"
-    "Global"
-    "Tickets";
+    grid-template-areas: "logo" "INDIA" "Global" "Tickets";
 }
 
-
-.homeContent .logo{
+.homeContent .logo {
     grid-area: logo;
     /* background-color: yellow; */
     display: flex;
@@ -152,7 +140,8 @@ nav .brand-logo {
     color: white;
     font-size: 30px;
 }
-.India{
+
+.India {
     grid-area: INDIA;
     /* background-color: tomato; */
     display: flex;
@@ -161,7 +150,8 @@ nav .brand-logo {
     color: white;
     font-size: 20px;
 }
-.Global{
+
+.Global {
     grid-area: Global;
     width: 100%;
     /* background-color: darkgreen; */
@@ -174,15 +164,17 @@ nav .brand-logo {
     text-align: center;
 }
 
+/*Built by Joyal A Johney & Devdutt Shenoi*/
 
-.Tickets{
+.Tickets {
     grid-area: Tickets;
     /* background-color: teal; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Tickets a{
+
+.Tickets a {
     height: 5em;
     width: 15em;
     background-color: whitesmoke;
@@ -194,7 +186,8 @@ nav .brand-logo {
     flex-direction: row;
     justify-content: center;
 }
-.Tickets i{
+
+.Tickets i {
     flex-basis: 30%;
     font-size: 30px;
     /* background-color: teal; */
@@ -202,15 +195,14 @@ nav .brand-logo {
     color: orangered;
 }
 
-.ticketIcon{
+.ticketIcon {
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: teal; */
-    
 }
 
-#bookTickets{
+#bookTickets {
     flex-basis: 70%;
     /* height: 2em; */
     /* background-color: blueviolet; */
@@ -222,14 +214,9 @@ nav .brand-logo {
     /* background-color: yellow; */
 }
 
-
-
-
-
-
-
 /* Global DIV */
-.globalDiv{
+
+.globalDiv {
     width: 100%;
     height: 80vh;
     padding: 4em;
@@ -238,7 +225,7 @@ nav .brand-logo {
     grid-template-rows: 1fr 0.8fr 0.9fr;
 }
 
-.globalHead{
+.globalHead {
     width: 100%;
     height: 20vh;
     display: flex;
@@ -249,7 +236,8 @@ nav .brand-logo {
     color: gray;
     /* background-color: teal; */
 }
-.globalContent{
+
+.globalContent {
     height: auto;
     font-size: 20px;
     font-weight: lighter;
@@ -257,46 +245,43 @@ nav .brand-logo {
     /* background-color: yellow; */
     padding-bottom: 1em;
 }
+
 .globalDiv button {
-	width: 14em;
-	border-radius: 7px;
-	justify-self: center;
-	height: 4em;
+    width: 14em;
+    border-radius: 7px;
+    justify-self: center;
+    height: 4em;
 }
 
-
-
-
-
-
-
-
-
-
 /* ImagesDiv */
-.imagesDiv{
+
+.imagesDiv {
     height: 100vh;
     background-color: #EFEFEF;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.top-left{
+
+.top-left {
     background-image: url('../assets/left_image.jpg');
     background-size: cover;
     grid-column: 1/3;
 }
-.top-right{
+
+.top-right {
     background-image: url('../assets/right_image.jpg');
     background-size: cover;
     grid-column: 4/5;
 }
-.bottom-mid{
+
+.bottom-mid {
     background-image: url('../assets/middle_image.jpg');
     background-size: cover;
     grid-column: 2/4;
 }
-.quote-section{
+
+.quote-section {
     font-size: 25px;
     background-color: #b4b4b4;
     color: white;
@@ -306,16 +291,9 @@ nav .brand-logo {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
 /* COMPANIES */
-.companies{
+
+.companies {
     width: 100%;
     height: 70vh;
     display: flex;
@@ -326,30 +304,27 @@ nav .brand-logo {
     color: gray;
 }
 
-
-
-
-
-
-
-
 /* Parallax Div */
-.kochi{
+
+.kochi {
     opacity: 0.5;
 }
-.kochiDiv div{
+
+.kochiDiv div {
     font-size: 3em;
     font-weight: lighter;
     color: white;
     z-index: 9;
     text-align: center;
 }
-.kochiDiv button{
+
+.kochiDiv button {
     z-index: 9;
     margin-top: 2em;
     height: 55px;
 }
-.kochiDiv{
+
+.kochiDiv {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -360,22 +335,17 @@ nav .brand-logo {
     flex-direction: column;
 }
 
-
-
-
-
-
 /* footer */
-.footer{
+
+.footer {
     height: 50vh;
     background-color: #303030;
 }
 
-@media(max-width: 768px){
-
-}
+@media(max-width: 768px) {}
 
 /* Style the container/contact section */
+
 .map-box {
     color: white;
     height: 100vh;
@@ -387,16 +357,16 @@ nav .brand-logo {
     width: 100vw;
 }
 
-#map{
+#map {
     padding-bottom: 10px
 }
 
-
-.attendeeContainer{
+.attendeeContainer {
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
-.attendeeHead{
+
+.attendeeHead {
     width: 100%;
     height: 30vh;
     padding: 2em;
@@ -408,54 +378,53 @@ nav .brand-logo {
     color: gray;
     /* background-color: teal; */
 }
-.attendeeDetails{
+
+.attendeeDetails {
     width: 100%;
     min-height: 100vh;
 }
-.attendeeDetailDiv{
+
+.attendeeDetailDiv {
     height: auto;
     width: 70%;
-
     left: 0;
     right: 0;
     margin: auto;
     /* background-color: tomato; */
-
 }
 
-.row{
-    display:flex;
+.row {
+    display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-hr{
+hr {
     width: 90%;
     border-color: gray;
 }
 
 /*Contact portraits*/
+
 .portrait {
-    text-align:center;
-    padding:20px;
-  }
-  .portrait:hover {
+    text-align: center;
+    padding: 20px;
+}
+
+.portrait:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-  }
+}
 
-  .portrait > img{
-    width:300px;
-    border-radius:300px;
-  }
+.portrait>img {
+    width: 300px;
+    border-radius: 300px;
+}
 
+/*Footer*/
 
-  
-  
-  
-  /*Footer*/
-.footerDiv{
+.footerDiv {
     margin-top: 6em;
     width: 100%;
     height: 50vh;
@@ -464,103 +433,96 @@ hr{
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-columns: 4fr 2fr 2fr;
-    grid-template-areas: 
-        "logo ibeto excel"
-        "brand brand brand";
+    grid-template-areas: "logo ibeto excel" "brand brand brand";
 }
 
 .footerDiv a {
     color: white;
 }
 
-
-.logo{
+.logo {
     grid-area: logo;
     /* background-color: tomato; */
     color: white;
     display: grid;
 }
-.logo img{
+
+.logo img {
     justify-self: center;
     align-self: center;
 }
-.logo div{
+
+.logo div {
     justify-self: center;
     margin: -2em;
 }
-.logo div a{
+
+.logo div a {
     color: white;
     font-size: 22px;
     padding: 0 1em;
 }
-.logo div a:hover{
+
+.logo div a:hover {
     cursor: pointer;
 }
 
-
-
-
-.footerIbeto{
+.footerIbeto {
     grid-area: ibeto;
     /* background-color: teal; */
     display: grid;
 }
-.footerIbeto img{
+
+.footerIbeto img {
     justify-self: center;
     align-self: center;
     height: 5em;
 }
-.footerIbeto div{
+
+.footerIbeto div {
     justify-self: center;
     color: white;
     margin-top: -1em;
 }
 
-
-
-
-.footerExcel{
+.footerExcel {
     grid-area: excel;
     /* background-color: #333; */
     display: grid;
 }
-.footerExcel img{
+
+.footerExcel img {
     justify-self: center;
     align-self: center;
     height: 5em;
 }
-.footerExcel div{
+
+.footerExcel div {
     justify-self: center;
     color: white;
     margin-top: -1em;
 }
 
-
-
-
-.Excelbrand{
+.Excelbrand {
     grid-area: brand;
     /* background-color: brown; */
     display: grid;
 }
-.Excelbrand span{
+
+.Excelbrand span {
     align-self: center;
     justify-self: center;
     color: white;
 }
 
-
-
-
-
-
 /* Responsive - Mobile View */
-@media(max-width: 768px){
+
+@media(max-width: 768px) {
     /* Footer */
-    .footerDiv{
+    .footerDiv {
         height: 30vh;
     }
-    .logo img{
+    .logo img {
         display: none;
     }
     .logo div {
@@ -569,41 +531,40 @@ hr{
     .logo div span {
         display: block;
     }
-    .logo div a{
+    .logo div a {
         font-size: 10px;
         padding: 0 4px;
     }
-    .footerIbeto img{
+    .footerIbeto img {
         height: 3em;
     }
-    .footerIbeto div{
+    .footerIbeto div {
         font-size: 8px;
     }
     .footerExcel {
         margin: 0 1em;
     }
-    .footerExcel img{
+    .footerExcel img {
         height: 3em;
     }
-    .footerExcel div{
+    .footerExcel div {
         font-size: 8px;
     }
 }
 
-
 /* Media queries */
+
 /* very small phone Iphone SE */
 
 @media only screen and (max-width: 320px) {
-    .India{
+    .India {
         font-size: 15px;
     }
-
     .Global {
         font-size: 35px;
         text-align: center;
     }
-    .globalContent{
+    .globalContent {
         font-size: 15px;
     }
     .globalDiv button {
@@ -612,28 +573,23 @@ hr{
 }
 
 /* iphone 6s and 6s+*/
+
 @media only screen and (max-width: 420px) {
     .HomeDiv {
         height: 90vh;
-    
     }
-
     .transparent-box {
         height: 90vh;
     }
-
-    .India{
+    .India {
         font-size: 15px;
     }
-
     .Global {
         font-size: 35px;
         text-align: center;
     }
-    
     #tickets {
         font-size: 15px;
-
     }
     .Tickets i {
         font-size: 25px;
@@ -641,8 +597,6 @@ hr{
     .Tickets a {
         padding: 10px 20px;
     }
-    
-    
     .globalDiv {
         height: 95vh;
     }
@@ -651,76 +605,70 @@ hr{
         text-align: center;
         font-size: 2.5em;
     }
-    .globalContent{
+    .globalContent {
         font-size: 15px;
     }
-    
-    .imagesDiv{
+    .imagesDiv {
         height: auto;
         background-color: #EFEFEF;
         display: grid;
         grid-template-columns: auto;
     }
-    .top-left{
+    .top-left {
         background-image: url('../assets/left_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 35vh;
     }
-    .top-right{
+    .top-right {
         background-image: url('../assets/right_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 55vh;
-
     }
-    .bottom-mid{
+    .bottom-mid {
         background-image: url('../assets/middle_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 40vh;
-        
     }
-    .quote-section{
+    .quote-section {
         height: 35vh;
         grid-column: auto;
         color: white;
     }
-    
 }
 
 /*ipad potrait grids*/
+
 @media only screen and (max-width: 805px) {
-    .imagesDiv{
+    .imagesDiv {
         height: auto;
         background-color: #EFEFEF;
         display: grid;
         grid-template-columns: auto;
     }
-    .top-left{
+    .top-left {
         background-image: url('../assets/left_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 35vh;
     }
-    .top-right{
+    .top-right {
         background-image: url('../assets/right_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 40vh;
-
     }
-    .bottom-mid{
+    .bottom-mid {
         background-image: url('../assets/middle_image.jpg');
         background-size: cover;
         grid-column: auto;
         height: 40vh;
-        
     }
-    .quote-section{
+    .quote-section {
         height: 35vh;
         grid-column: auto;
         color: white;
     }
-    
 }
