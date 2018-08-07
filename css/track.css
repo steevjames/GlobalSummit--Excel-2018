@@ -89,6 +89,17 @@ body{
 
 
 
+/* EXTRA DIV */
+.extraDiv{
+    height: 50vh;
+    width: 100vw;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
 
 
 
@@ -98,11 +109,12 @@ body{
 /* SPEAKER PANEL */
 .speakerPanel{
     margin-top: 4em;
+    margin-bottom: 4em;
     position: relative;
     /* background-color: teal; */
     height: 90vh;
     width: 100vw;
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,6 +132,9 @@ body{
     grid-template-rows: 25% 75%;
     grid-template-columns: auto;
 }
+.speakerPanel > div > h3{
+    color: tomato;
+}
 
 
 .speakers{
@@ -134,7 +149,7 @@ body{
 .speakerImage{
     /* background-color: blue; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;    
 }
 
@@ -147,7 +162,7 @@ body{
 
 .speakerDetails{
     /* background-color: brown; */
-    padding: 6em;
+    padding: 7em;
     text-align: center;
 }
 
@@ -157,4 +172,40 @@ body{
 
 .speakerDesig{
     font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* TRACK CONTACT */
+.trackContacts{
+    background-color: #004e92;
+    margin-top: 4em;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackContacts > div{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+    color: tomato;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: auto;
+    padding: 1em;
+}
+
+.trackContactDetails{
+    background-color: teal;
 }
