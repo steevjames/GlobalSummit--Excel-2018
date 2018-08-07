@@ -339,7 +339,23 @@ body{
 
 }
 
-/* ATTENDEES */
+/* Style the container/contact section */
+.map-box {
+    color: white;
+    height: 100vh;
+    padding-top: 10px;
+    position: adaptive;
+    left: 0;
+    border-radius: 5px;
+    background-color: #303030;
+    width: 100vw;
+}
+
+#map{
+    padding-bottom: 10px
+}
+
+
 .attendeeContainer{
     width: 100%;
     height: 250vh;
@@ -427,7 +443,7 @@ hr{
 .footerDiv{
     width: 100%;
     height: 50vh;
-    padding-top: 2em;
+    padding-top: 10em;
     background-color: #333;
     display: grid;
     grid-template-rows: 3fr 1fr;
