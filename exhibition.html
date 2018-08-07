@@ -19,30 +19,27 @@
 
 
 
-    <!-- NavBar -->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <div href="#">TRACKS</div>
-                </li>
-                <li>
-                    <a href="#">STARTUPS</a>
-                </li>
-                <li>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                    <a href="#">INVESTORS</a>
-                </li>
-                <li>
-                    <a href="#">PARTNERS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- NAVBAR -->
+    <div class="navBar z-depth-3">
+        <div class="Logo">LOGO</div>
 
+        <div class="nav-details">
+            <a href="#">Contacts</a>
+            <a href="#">Exhibition</a>
+            <a href="#">Idea Pitching</a>
+            <div class="dropdown" id="dropdown" onclick="dropDown()">
+                <button class="dropdown-btn">Tracks</button>
+                <div class="dropDown-content" id="dropdown-content">
+                    <a href="#">Track1</a>
+                    <a href="#">Track2</a>
+                    <a href="#">Track3</a>
+                    <a href="#">Track4</a>
+                    <a href="#">Track5</a>
+                    <a href="#">Track6</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -58,6 +55,9 @@
                 <div class="Global">Exhibition</div>
                 <div class="Tickets">
                     <a href="#">
+                        <div class="ticketIcon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
                         <div id="bookTickets">Book Exhibit</div>
                     </a>
                 </div>
@@ -67,7 +67,7 @@
 
 
 
-    <hr />
+    <!-- <hr /> -->
 
 
 
@@ -81,7 +81,7 @@
     <div class="globalDiv">
 
         <div class="globalHead">
-            Global Summit 2018
+            Exhibition
         </div>
 
         <div class="globalContent">
