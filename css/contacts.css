@@ -1,0 +1,41 @@
+body{
+    overflow-x: hidden;
+}
+.card-image img{
+    width: 13em;
+    border-radius: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the container/contact section */
+.map-box {
+    color: white;
+    height: 100vh;
+    padding-top: 10px;
+    position: adaptive;
+    left: 0;
+    border-radius: 5px;
+    background-color: #303030;
+    width: 100vw;
+}
+
+#map{
+    padding-bottom: 10px
+}
+.contactpanel{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+}
+.contact{
+    text-align:center;
+    padding:20px;
+}
+.contact > img{
+    width:300px;
+    border-radius:300px;
+}
