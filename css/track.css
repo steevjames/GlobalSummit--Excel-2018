@@ -221,6 +221,7 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: teal; */
 }
 
 .trackContacts > div{
@@ -236,4 +237,5 @@ background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, F
 
 .trackContactDetails{
     display: flex;
+    justify-content: center;
 }
