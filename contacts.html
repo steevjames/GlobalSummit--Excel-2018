@@ -14,27 +14,120 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <div class="navBar z-depth-3">
+        <div class="Logo">LOGO</div>
 
+        <div class="nav-details">
+            <a href="#">Contacts</a>
+            <a href="#">Exhibition</a>
+            <a href="#">Idea Pitching</a>
+            <div class="dropdown" id="dropdown" onclick="dropDown()">
+                <button class="dropdown-btn">Tracks</button>
+                <div class="dropDown-content" id="dropdown-content">
+                    <a href="#">Track1</a>
+                    <a href="#">Track2</a>
+                    <a href="#">Track3</a>
+                    <a href="#">Track4</a>
+                    <a href="#">Track5</a>
+                    <a href="#">Track6</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ATTENDEES -->
     <div class="attendeeContainer">
         <div class="attendeeHead">
-            Featured Attendees
+            Core Team
         </div>
         <div class="attendeeDetails">
             <div class="attendeeDetailDiv">
 
 
-                <div class="card small">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./assets/right_image.jpg">
+                <div class="row">
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="card-content">
-                        <div class="card-title activator grey-text text-darken-3">Nicolas Brusson</div>
-                        <div class="grey-text text-darken-4">Co-founder & CEO</div>
-                        <div class="grey-text text-darken-7">BlaBlaCar</div>
-                        <div class="grey-text text-darken-4">France</div>
+
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
                     </div>
+
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+
+                <div class="row">
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='portrait'>
+                        <img src="./assets/right_image.jpg" alt="">
+                        <ul class='portrait-details'>
+                            <li>Name</li>
+                            <li>
+                                <a href='mailto:email@excelmec.org'>email@excelmec.org</a>
+                            </li>
+                            <li class='fontawesome-phone'>
+                                <a href='tel:phone'>phone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
 
 
 
@@ -43,33 +136,77 @@
     </div>
     <div class="map-box">
         <div style="text-align:center">
-          <h2>Contact Us</h2>
-          <p>Swing by for a cup of coffee, or leave us a message:</p>
+            <h2>Location</h2>
+            <h4>Kochi Marriot Hotel</h4>
         </div>
         <div class="map">
             <div id="map" style="width:100%;height:750px"></div>
         </div>
-      </div>
-      
-      <!-- Initialize Google Maps -->
-      <script>
-      function myMap() {
-        var myCenter = new google.maps.LatLng(10.0279665,76.3076201);
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {center: myCenter, zoom: 15};
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-      }
-      </script>
-      
-      <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key&callback=myMap"></script>
-      <!--
-      To use this code on your website, get a free API key from Google.
-      Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-      --> 
+    </div>
+
+    <!-- Initialize Google Maps -->
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(10.0279665, 76.3076201);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key&callback=myMap"></script>
+    <!--
+      To use this code on the website, get a free API key from Google.
+      -->
     <!-- FOOTER -->
-    <footer class="companies footer">footer</footer>
+    <div class="footerDiv">
+
+        <div class="logo">
+            <img src="assets/globalsummit.img" />
+            <div>
+                <span>
+                    <a href="./index.html#nav">Home</a>
+                </span>
+                <span>
+                    <a href="./index.html#about">About</a>
+                </span>
+                <span>
+                    <a href="./contacts.html"
+                        target="_blank">Contact Us</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerIbeto">
+            <img src="./assets/img.img">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">Global Summit</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="footerExcel">
+            <img src="./assets/img.img">
+            <div>
+                <span>
+                    <a href="http://excelmec.org">excelmec.org</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="Excelbrand">
+            <span>&copy; Excel 2018</span>
+        </div>
+
+    </div>
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="./JS/script.js"></script>
