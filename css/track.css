@@ -19,6 +19,17 @@ body{
     background: url('../assets/track4Head.jpg');
     background-size: cover;
 }
+.track5{
+    background: url('../assets/track5Head.jpg');
+    background-size: cover;
+}
+.track6{
+    background: url('../assets/track6head.jpg');
+    background-size: cover;
+}
+
+
+
 
 .headingDetails{
     /* background-color: teal; */
