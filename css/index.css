@@ -359,7 +359,8 @@ body{
 
 .attendeeContainer{
     width: 100%;
-    height: 250vh;
+    min-height: 250vh;
+    overflow:hidden;
 }
 .attendeeHead{
     width: 100%;
@@ -375,29 +376,24 @@ body{
 }
 .attendeeDetails{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .attendeeDetailDiv{
     height: auto;
     width: 70%;
-    position: absolute;
+
     left: 0;
     right: 0;
     margin: auto;
     /* background-color: tomato; */
-    display: grid;
-    grid-template-rows: repeat(3,0.7fr);
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 2em;
-    grid-row-gap: 0;
+
 }
 
 .row{
-    display: flex;
-    flex-direction: column;
+    display:flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 hr{
@@ -407,26 +403,8 @@ hr{
 
 /*Contact portraits*/
 .portrait {
-    flex-basis: 33%;
-    font-size: 1.5em;
-    height: 5rem;
-    width: 5rem;
-    -moz-border-radius: 2.5rem;
-    -webkit-border-radius: 2.5rem;
-    border-radius: 2.5rem;
-    display: inline-block;
-    position: relative;
-    margin: 1em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    text-align:center;
+    padding:20px;
   }
   .portrait:hover {
     -webkit-filter: grayscale(0);
@@ -434,9 +412,8 @@ hr{
   }
 
   .portrait > img{
-      height: 15rem;
-      width: 15rem;
-      border-radius: 50%;
+    width:300px;
+    border-radius:300px;
   }
 
 
