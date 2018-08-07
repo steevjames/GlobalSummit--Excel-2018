@@ -159,13 +159,14 @@ body{
     align-items: center;
 }
 .Tickets a{
-    height: 9rem;
-    width: 25em;
+    height: auto;
+    width: auto;
     background-color: whitesmoke;
     opacity: 1;
     padding: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 0;
+    padding: 15px 40px;
 }
 .Tickets i{
     font-size: 35px;
@@ -183,7 +184,7 @@ body{
     width: 100%;
     height: 2em;
     /* background-color: blueviolet; */
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: flex-start;
     font-size: 22px;
@@ -572,7 +573,7 @@ hr{
     .footerExcel div{
         font-size: 8px;
     }
-
+}
 
 
 /* Media queries */
@@ -614,41 +615,17 @@ hr{
         font-size: 35px;
         text-align: center;
     }
-
-    .Tickets {
-        grid-area: Tickets;
-        /*background-color: white;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        height: auto;
-    }
-
-    .Tickets i {
-        padding-bottom: 5px;
-        font-size: 30px;
-    }
+    
     #tickets {
-        width: 100%;
-        height: auto; 
-        /* background-color: blueviolet; */
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
         font-size: 15px;
-        color: orangered;
+
+    }
+    .Tickets i {
+        font-size: 25px;
     }
     .Tickets a {
-        height: auto;
-        width: 40vw;
-        background-color: rgba(245, 245, 245,0.95);
-        opacity: 1;
-        padding: 1em 0;
-        border-radius: 5px;
-        z-index: 0;
+        padding: 10px 20px;
     }
-    
     
     
     .globalDiv {
@@ -661,37 +638,7 @@ hr{
     }
     .globalContent{
         font-size: 15px;
-    }.imagesDiv{
-        height: 100vh;
-        background-color: #EFEFEF;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
-    .top-left{
-        background-image: url('../assets/left_image.jpg');
-        background-size: cover;
-        grid-column: 1/3;
-    }
-    .top-right{
-        background-image: url('../assets/right_image.jpg');
-        background-size: cover;
-        grid-column: 4/5;
-    }
-    .bottom-mid{
-        background-image: url('../assets/middle_image.jpg');
-        background-size: cover;
-        grid-column: 2/4;
-    }
-    .quote-section{
-        font-size: 30px;
-    }
-    
-    .globalDiv button {
-        width: auto;
-    }
-    
-    
     
     .imagesDiv{
         height: auto;
@@ -725,4 +672,40 @@ hr{
         color: white;
     }
     
-}}
+}
+
+/*ipad potrait grids*/
+@media only screen and (max-width: 805px) {
+    .imagesDiv{
+        height: auto;
+        background-color: #EFEFEF;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .top-left{
+        background-image: url('../assets/left_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 35vh;
+    }
+    .top-right{
+        background-image: url('../assets/right_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
+
+    }
+    .bottom-mid{
+        background-image: url('../assets/middle_image.jpg');
+        background-size: cover;
+        grid-column: auto;
+        height: 40vh;
+        
+    }
+    .quote-section{
+        height: 35vh;
+        grid-column: auto;
+        color: white;
+    }
+    
+}
