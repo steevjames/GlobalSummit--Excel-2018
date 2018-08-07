@@ -112,7 +112,7 @@ body{
 .speakerPanel > div{
     height: 100%;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: center;
     color: gray;
     padding: 1em;
@@ -123,7 +123,7 @@ body{
 
 
 .speakers{
-    background-color: tomato;
+    /* background-color: tomato; */
     height: 100%;
     width: 100%;
     display: grid;
